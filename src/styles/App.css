@@ -1,0 +1,179 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo principal */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9fafc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Container principal */
+  .App {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título */
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  /* Formulário de entrada */
+  form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    padding: 12px 20px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Lista de tarefas */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  li:hover {
+    background: #e2e8f0;
+  }
+  
+  li span {
+    flex: 1;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  li span.completed {
+    text-decoration: line-through;
+    color: #6b7280;
+  }
+  
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #007bff;
+  }
+  
+  /* Botão de exclusão */
+  button {
+    background: #f87171;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: #dc2626;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .App {
+      margin: 20px auto;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    input[type="text"] {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    li {
+      flex-wrap: wrap;
+    }
+  
+    li span {
+      margin-left: 0;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+  .App {
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Para centralizar verticalmente */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o deslocamento */
+  }
+  
